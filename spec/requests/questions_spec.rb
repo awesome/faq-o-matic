@@ -2,10 +2,15 @@ require 'spec_helper'
 
 describe "Questions" do
   describe "GET /questions" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
+    it "should fetch all the questions" do
       get questions_path
       response.status.should be(200)
+    end
+  end
+
+  describe "GET /questions/:id" do
+    it "should show a specific question" do
+      
     end
   end
 end
